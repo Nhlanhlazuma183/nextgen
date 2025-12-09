@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    
 </head>
 <body>
     <!-- Header -->
     <header id="header">
         <div class="container header-container">
-            <div class="logo" style='display:flex;flex-direction:row;align-items:center'><img src='./images/l1.png' style='width:80px;'>STEM <span> UNLIMITED </span> nextgen</div>
+            <div class="logo" style='display:flex;flex-direction:row;align-items:center'><img src='./images/l1.png' style='width:80px;'>STEM <span> UNLIMITED </span> nextGen</div>
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -38,22 +38,17 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                  
-		        <h1>NHLANHLA ZUMA</h1>
-                  	<div class="hero-tagline">MATHEMATICS & PHYSICAL SCIENCES TUTOR</div>
-                  	<div class="hero-subtitle">BEng Tech Civil Engineering Graduate</div>
-
-                  	<div class="hero-location">
-                        	<i class="fas fa-map-marker-alt"></i>
-                        	<span>Daveyton - Benoni - Springs - Brakpan - Johannesburg for face-to-face sessions.</span>
-			</div>
-			<div class="hero-buttons">
-                        	<a href="#contact" class="btn">Contact Now</a>
-                        	<button class="btn btn-secondary" id="bookNowBtn">Book a Session</button>
-                 	</div>
-
-		  
-		</div>
+                <h1>NHLANHLA ZUMA</h1>
+                <div class="hero-tagline">MATHEMATICS & PHYSICAL SCIENCES TUTOR</div>
+                <div class="hero-subtitle">BEng Civil Engineering Graduate</div>
+                <div class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Daveyton - Benoni for face to face sessions</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Contact Now</a>
+                    <button class="btn btn-secondary" id="bookNowBtn">Book a Session</button>
+                </div>
             </div>
         </div>
     </section>
@@ -64,23 +59,17 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a passionate and dedicated tutor with a Bachelor's degree in Civil Engineering. I transform the way students perceive and excel in Mathematics and Physical Sciences through personalized, engaging, and practical tutoring sessions.
-
-</p>
-                    <p>With 6+ years of experience guiding students from Grade 8 to 12, I have developed a method that simplifies complex concepts and builds unshakable foundational confidence. My engineering background allows me to bridge textbook theory with real-world application, showing students the "why" behind the formulas and making learning both relevant and exciting.</p>
-                    <h2>My Mission</h2>
-		    <p>To end the stigma that Mathematics and Physics are inherently difficult by providing a clear, patient, and supportive learning environment. I am committed to unlocking each student's potential through tailored explanations, practical context, and confidence-building success.<p/>
-		    <h2>My Vision</h2>
-		    <p> To create a generation of students who approach quantitative subjects not with anxiety, but with curiosity and confidence, empowered with the logical skills and problem-solving abilities that will serve them in any academic or career path they choose.</p>
-			<div class="qualifications">
+                    <p>I am a passionate and dedicated tutor with a Bachelor's degree in Civil Engineering. My mission is to help students unlock their full potential in Mathematics and Physical Sciences through personalized, engaging tutoring sessions.</p>
+                    <p>With years of experience tutoring students from Grade 8 to 12, I've developed effective teaching methods that simplify complex concepts and build strong foundational knowledge. My engineering background gives me a practical perspective that helps students understand real-world applications of what they're learning.</p>
+                    <div class="qualifications">
                         <div class="qualification-tag">BEng Civil Engineering</div>
-                        <div class="qualification-tag">6+ Years Tutoring Experience</div>
-                        <div class="qualification-tag">Mathematics</div>
-                        <div class="qualification-tag">Physical Sciences</div>
+                        <div class="qualification-tag">5+ Years Tutoring Experience</div>
+                        <div class="qualification-tag">Specialized in STEM</div>
+                        <div class="qualification-tag">Curriculum Expert</div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src='./images/a1.jpg' style='width:250px'>
+                     <img src='./images/a1.jpg' style='width:250px'>
                 </div>
             </div>
         </div>
@@ -125,7 +114,11 @@
     <section class="section" id="pricing">
         <div class="container">
             <h2>Tutoring Packages</h2>
-            
+            <div class="pricing-tabs">
+                <button class="tab-btn active" data-tab="online">Online Tutoring</button>
+                <button class="tab-btn" data-tab="face-to-face">Face-to-Face Tutoring</button>
+            </div>
+
             <div class="tab-content active" id="online-tab">
                 <div class="pricing-cards">
                     <div class="card pricing-card">
@@ -136,48 +129,33 @@
                         </div>
                         <ul class="pricing-features">
                             <li>Personalized lesson plans</li>
-                          
+                            <li>Flexible scheduling</li>
                             <li>Interactive digital whiteboard</li>
                             <li>Resource materials provided</li>
                             <li>Progress tracking</li>
                         </ul>
                         <button class="btn" data-plan="one-on-one-online">Select Plan</button>
                     </div>
-                    <div class="card pricing-card">
+
+                    <div class="card pricing-card featured">
+                        <div class="popular-badge">Most Popular</div>
                         <div class="pricing-header">
-                            <h3>Stem online lessons</h3>
-                            <div class="price">R200<span>/month</span></div>
-                            <p>Atleast 4 live lessons a month</p>
+                            <h3>Pre-recorded Online Lessons</h3>
+                            <div class="price">R200<span>/month per learner</span></div>
+
                         </div>
                         <ul class="pricing-features">
-                            <li>Pre-recorded lesson plans</li>
-                            <li>Flexible scheduling</li>
-                  
-                            <li>Resource materials provided</li>
-                            <li>Progress tracking</li>
+                            <li>Structured Lesson plans</li>
+                            <li>Flexible schedule</li>
+                            <li>Reduced costs</li>
+                            <li>Convenient home learning environment</li>
+                            <li>Up to 2 live lessons</li>
                         </ul>
-                        <button class="btn" data-plan="one-on-one-online">Select Plan</button>
+                        <button class="btn" data-plan="group-online">Select Plan</button>
                     </div>
-		    <div class="card pricing-card">
-                        <div class="pricing-header">
-                            <h3>One-on-One lessons</h3>
-                            <div class="price">R130<span>/hour</span></div>
-                            <p>Personalized individual attention</p>
-                        </div>
-                        <ul class="pricing-features">
-                            <li>Personalized lesson plans</li>
-                            <li>Flexible scheduling</li>
-                         
-                            <li>Resource materials provided</li>
-                            <li>Progress tracking</li>
-                        </ul>
-                        <button class="btn" data-plan="one-on-one-online">Select Plan</button>
-			<p>NB: Additional transport costs may apply depending on where you live</p>
-                    </div>
-                    
                 </div>
             </div>
-            
+
             <div class="tab-content" id="face-to-face-tab">
                 <div class="pricing-cards">
                     <div class="card pricing-card">
@@ -195,7 +173,7 @@
                         </ul>
                         <button class="btn" data-plan="house-calls">Select Plan</button>
                     </div>
-                    
+
                     <div class="card pricing-card featured">
                         <div class="popular-badge">Best Value</div>
                         <div class="pricing-header">
@@ -228,9 +206,9 @@
                             <label for="sessionType">Session Type</label>
                             <select id="sessionType">
                                 <option value="one-on-one-online">One-on-One Online (R120/hr)</option>
-                        
+                                <option value="group-online">Pre-recorded Online lessons (R200/pm per learner)</option>
                                 <option value="house-calls">House Calls (R130/hr + transport)</option>
-                                <option value="monthly-group">Monthly Group Classes (from R500/month)</option>
+                                <option value="monthly-group">Monthly Group Classes (R650/month)</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -244,8 +222,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="hours">Hours per session</label>
-                            <input type="number" id="hours" min="1" max="3" value="2">
+                            <label for="hours">Hours per Week</label>
+                            <input type="number" id="hours" min="1" max="20" value="2">
                         </div>
                         <div class="form-group">
                             <label for="weeks">Number of Weeks</label>
@@ -255,14 +233,17 @@
                     <div class="form-group" id="transportGroup" style="display: none;">
                         <label for="transport">Transport Fee (for house calls)</label>
                         <select id="transport">
-                            <option value="50">R50 (within 5km)</option>
+                            <option value="50">R50 (within 5km - negotiable)</option>
                             <option value="75">R75 (5-10km)</option>
                             <option value="100">R100 (10-15km)</option>
                         </select>
                     </div>
-                    
+                    <div class="form-group">
+                        <label for="learners">Number of Learners (for group classes)</label>
+                        <input type="number" id="learners" min="1" max="10" value="1">
+                    </div>
                     <button class="btn" id="calculateBtn">Calculate Cost</button>
-                    
+
                     <div class="calculator-result" id="calculatorResult">
                         <h3>Estimated Cost</h3>
                         <div class="calculated-price" id="calculatedPrice">R0</div>
@@ -281,39 +262,78 @@
             <div class="testimonials-container">
                 <div class="testimonial-slider">
                     <div class="testimonial-track" id="testimonialTrack">
-                        <div class="testimonial-slide">
+
+                         <div class="testimonial-slide">
                             <div class="testimonial-text">
-                                "Nhlanhla helped me improve my Physical Sciences mark from 45% to 78% in just three months. His teaching style makes difficult concepts easy to understand."
+                                "I've been attending his lessons and I've never experienced any problems.He is trustworthy and very patient with his students and make sure each and every one understands before moving to another topic."
                             </div>
                             <div class="testimonial-author">
                                 <div class="author-avatar">TL</div>
                                 <div>
-                                    <h4>Thando L.</h4>
-                                    <p>Grade 12 Student, Benoni</p>
+                                    <h4>Dimpho</h4>
+                                    <p>Grade 11 Student, Unity Secondary School</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-slide">
                             <div class="testimonial-text">
-                                "The group classes are excellent value. I've gained so much confidence in Mathematics and finally understand algebra properly. Highly recommended!"
+                                "Nhlanhla is an exceptional math tutor. I went from averaging a 30 in grade 11 to a 68 in grade 12, and a big part of that improvement is thanks to him. He explains concepts thoroughly and takes the time to ensure you really understand the work. He's patient and always willing to help when you’re struggling. I highly recommend him to anyone who’s struggling with math and looking to improve their grades."
                             </div>
                             <div class="testimonial-author">
-                                <div class="author-avatar">SM</div>
+                                <div class="author-avatar">TL</div>
                                 <div>
-                                    <h4>Simphiwe M.</h4>
-                                    <p>Grade 11 Student, Daveyton</p>
+                                    <h4>Zanokuhle S.</h4>
+                                    <p>Grade 12 Student, Bedfordview.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="testimonial-slide">
                             <div class="testimonial-text">
-                                "As a parent, I appreciate Nhlanhla's professionalism and dedication. My daughter's marks have improved significantly and she actually enjoys Maths now."
+                                "Nhlanhla is dedicated to his work and offers great understanding with the right pace of learning to his students. He makes sure to cover every with patience without leaving even the tiniest misunderstandings behind. And therefore I highly recommend his services."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">TL</div>
+                                <div>
+                                    <h4>Aroriswe M.</h4>
+                                    <p>Parent of a Grade 12 learner, Daveyton.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="testimonial-slide">
+                            <div class="testimonial-text">
+                                "had the pleasure of being tutored by Nhlanhla in physics and maths, and I must say that I saw significant improvement in my understanding and grades. What struck me most about him was his unique balance of patience and firmness. He was always willing to explain concepts clearly and thoroughly, but also knew when to challenge me and push me beyond my comfort zone."
                             </div>
                             <div class="testimonial-author">
                                 <div class="author-avatar">PN</div>
                                 <div>
-                                    <h4>Mrs. P. Nkosi</h4>
-                                    <p>Parent of Grade 10 student</p>
+                                    <h4>Alice S.</h4>
+                                    <p>Grade 12, Hulwazi Secondary School.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-text">
+                                "Nhlanhla served as my mathematics tutor, and his guidance significantly contributed to my understanding and confidence in the subject. He possesses an exceptional ability to break down complex mathematical concepts into simple, digestible explanations. I managed to improve my maths mark from 34% to 68% in as 7 months span."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">PN</div>
+                                <div>
+                                    <h4>Skhumbuzo M.</h4>
+                                    <p>Grade 12, Online</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-text">
+                                "It is my pleasure to recommend Nhlanhla for teaching Physics and Mathematics. He has teaching skills and knowledge and have a skill to make sure that you master the subject"
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">PN</div>
+                                <div>
+                                    <h4>Candice T</h4>
+                                    <p>Grade 11 & 12, Unity Secondary School.</p>
                                 </div>
                             </div>
                         </div>
@@ -323,12 +343,59 @@
                     <div class="slider-dot active" data-slide="0"></div>
                     <div class="slider-dot" data-slide="1"></div>
                     <div class="slider-dot" data-slide="2"></div>
+                    <div class="slider-dot" data-slide="3"></div>
+                    <div class="slider-dot" data-slide="4"></div>
+                    <div class="slider-dot" data-slide="5"></div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    
+    <!-- FAQ Section -->
+    <section class="section section-alt" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What materials do I need for online tutoring?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        For online sessions, you'll need a computer or tablet with internet access and a microphone. A digital stylus can be helpful for working through problems, but it's not required. All digital materials will be provided.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How are group classes structured?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Group classes have 3-5 students of similar ability levels. Sessions are 1-2 hours long, typically once or twice a week. We cover the curriculum systematically while allowing time for individual questions and collaborative problem-solving.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you help with exam preparation?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Exam preparation is a key part of my tutoring. We work on past papers, exam techniques, time management, and identifying areas that need extra focus. I provide customized revision schedules for major exams.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is your cancellation policy?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        I require at least 24 hours notice for session cancellations. Sessions cancelled with less than 24 hours notice may be charged at 50% of the session fee. Monthly group classes follow a fixed schedule with make-up sessions available for missed classes.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Resources Section -->
     <section class="section" id="resources">
@@ -378,22 +445,22 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h3>Service Area</h3>
-                            <p>Daveyton - Benoni - Springs - Brakpan - Johannesburg</p>
-                            <p>Nationwide online tutoring available</p>
-                        </div>
-                    </div>
-		    <div class="contact-item">
-                        <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div>
                             <h3>E-mail</h3>
-                            <p>nhlanhlazuma183@gmail.com</p>
-                            
+                            <p><a href="tel:0724846080" class="highlight">nhlanhlazuma183@gmail.com</a></p>
+                            <p>Available Mon-Sat, 7am-7pm</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Service Area</h3>
+                            <p>Daveyton - Benoni and surrounding areas for face-to-face sessions</p>
+                            <p>Nationwide online tutoring available</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -402,12 +469,14 @@
                         </div>
                         <div>
                             <h3>Availability</h3>
-                            <p>Monday - Friday: 1pm - 7pm</p>
+                            <p>Monday - Friday: 3pm - 7pm</p>
                             <p>Saturday: 9am - 3pm</p>
                             <p>Sunday: By appointment only</p>
                         </div>
                     </div>
-                    
+                    <div class="contact-map">
+                        <i class="fas fa-map-marked-alt"></i> Daveyton - Benoni Area
+                    </div>
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
@@ -445,10 +514,10 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-about">
-                    <div class="footer-logo">STEM <span> UNLIMITED </span> nextgen</div>
+                    <div class="footer-logo">NHLANHLA <span>ZUMA</span> TUTORING</div>
                     <p>Professional Mathematics & Physical Sciences tutoring for Grade 8-12 students. Helping students achieve academic excellence through personalized learning.</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
@@ -467,15 +536,13 @@
                 <div class="footer-contact">
                     <h3>Contact Info</h3>
                     <p><i class="fas fa-phone"></i> <a href="tel:0724846080">072 484 6080</a></p>
+                    <p><i class="fas fa-envelope"></i> nhlanhlazuma183@gmail.com</p>
                     <p><i class="fas fa-map-marker-alt"></i> Daveyton - Benoni, Gauteng</p>
-		    <p><i class="fas fa-envelope"></i> nhlanhlazuma183@gmail.com</p>
-                    <p><i class="fas fa-clock"></i> Mon-Fri: 1pm-7pm</p>
-  		    <p><i "></i>  -  Sat: 8am-7pm</p>
-		    <p><i "></i>  -  Sun: Appointment only</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 8am-7pm</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2020 STEM UNLIMITED nextgen. All rights reserved.</p>
+                <p>&copy; 2023 NHLANHLA ZUMA Tutoring. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -526,7 +593,406 @@
             </form>
         </div>
     </div>
-    <script src='script.js'></script>
-    
+
+    <script>
+        // JavaScript for NHLANHLA ZUMA Tutoring Website
+
+        // DOM Elements
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const navLinkItems = document.querySelectorAll('.nav-link');
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        const sessionType = document.getElementById('sessionType');
+        const transportGroup = document.getElementById('transportGroup');
+        const calculateBtn = document.getElementById('calculateBtn');
+        const calculatorResult = document.getElementById('calculatorResult');
+        const calculatedPrice = document.getElementById('calculatedPrice');
+        const calculationDetail = document.getElementById('calculationDetail');
+        const bookCalculatedBtn = document.getElementById('bookCalculatedBtn');
+        const faqItems = document.querySelectorAll('.faq-item');
+        const contactForm = document.getElementById('contactForm');
+        const messageStatus = document.getElementById('messageStatus');
+        const bookingModal = document.getElementById('bookingModal');
+        const bookNowBtn = document.getElementById('bookNowBtn');
+        const modalClose = document.getElementById('modalClose');
+        const bookingForm = document.getElementById('bookingForm');
+        const bookingStatus = document.getElementById('bookingStatus');
+        const testimonialTrack = document.getElementById('testimonialTrack');
+        const sliderDots = document.querySelectorAll('.slider-dot');
+        const selectPlanBtns = document.querySelectorAll('[data-plan]');
+
+        // Pricing data
+        const pricingData = {
+            'one-on-one-online': { rate: 120, type: 'hourly', baseText: 'One-on-One Online Tutoring' },
+            'group-online': { rate: 70, type: 'hourly-per-learner', baseText: 'Online Group Class' },
+            'house-calls': { rate: 130, type: 'hourly-plus-transport', baseText: 'House Call Tutoring' },
+            'monthly-group': { rate: 650, type: 'monthly', baseText: 'Monthly Group Classes (Both Subjects)' }
+        };
+
+        // Testimonial slider
+        let currentSlide = 0;
+        const totalSlides = document.querySelectorAll('.testimonial-slide').length;
+
+        // Mobile Navigation Toggle
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active')
+                ? '<i class="fas fa-times"></i>'
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking a link
+        navLinkItems.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+
+                // Update active nav link
+                navLinkItems.forEach(item => item.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            const scrollPos = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinkItems.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Pricing Tab Switching
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+
+                // Update active tab button
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Show corresponding tab content
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                    if (content.id === `${tabId}-tab`) {
+                        content.classList.add('active');
+                    }
+                });
+
+                // Update calculator if needed
+                if (sessionType.value.includes(tabId)) {
+                    updateTransportVisibility();
+                }
+            });
+        });
+
+        // Show/hide transport fee based on session type
+        function updateTransportVisibility() {
+            if (sessionType.value === 'house-calls') {
+                transportGroup.style.display = 'block';
+            } else {
+                transportGroup.style.display = 'none';
+            }
+        }
+
+        sessionType.addEventListener('change', updateTransportVisibility);
+
+        // Cost Calculator
+        calculateBtn.addEventListener('click', calculateCost);
+
+        // Also calculate when inputs change
+        document.getElementById('hours').addEventListener('input', calculateCost);
+        document.getElementById('weeks').addEventListener('input', calculateCost);
+        document.getElementById('learners').addEventListener('input', calculateCost);
+        document.getElementById('transport').addEventListener('change', calculateCost);
+        sessionType.addEventListener('change', calculateCost);
+
+        function calculateCost() {
+            const type = sessionType.value;
+            const hours = parseInt(document.getElementById('hours').value) || 2;
+            const weeks = parseInt(document.getElementById('weeks').value) || 4;
+            const learners = parseInt(document.getElementById('learners').value) || 1;
+            const transport = parseInt(document.getElementById('transport').value) || 0;
+            const subject = document.getElementById('subject').value;
+
+            let totalCost = 0;
+            let detailText = '';
+
+            switch(type) {
+                case 'one-on-one-online':
+                    totalCost = 120 * hours * weeks;
+                    detailText = `${hours} hour${hours > 1 ? 's' : ''} per week × ${weeks} week${weeks > 1 ? 's' : ''} = R${totalCost}`;
+                    break;
+
+                case 'group-online':
+                    totalCost = 70 * hours * weeks * learners;
+                    detailText = `${learners} learner${learners > 1 ? 's' : ''} × ${hours} hour${hours > 1 ? 's' : ''} per week × ${weeks} week${weeks > 1 ? 's' : ''} = R${totalCost}`;
+                    break;
+
+                case 'house-calls':
+                    totalCost = (130 * hours * weeks) + (transport * weeks);
+                    detailText = `${hours} hour${hours > 1 ? 's' : ''} per week × ${weeks} week${weeks > 1 ? 's' : ''} (R${130 * hours * weeks}) + Transport (R${transport}/week) = R${totalCost}`;
+                    break;
+
+                case 'monthly-group':
+                    // Monthly fee for both subjects
+                    if (subject === 'both') {
+                        totalCost = 650 * Math.ceil(weeks / 4);
+                        detailText = `Monthly group classes (both subjects): R650/month × ${Math.ceil(weeks / 4)} month${Math.ceil(weeks / 4) > 1 ? 's' : ''} = R${totalCost}`;
+                    }
+                    // Monthly fee for mathematics only
+                    else if (subject === 'mathematics') {
+                        totalCost = 500 * Math.ceil(weeks / 4);
+                        detailText = `Monthly group classes (mathematics only): R500/month × ${Math.ceil(weeks / 4)} month${Math.ceil(weeks / 4) > 1 ? 's' : ''} = R${totalCost}`;
+                    }
+                    // Physical sciences would be additional
+                    else {
+                        totalCost = 650 * Math.ceil(weeks / 4);
+                        detailText = `Monthly group classes (both subjects recommended): R650/month × ${Math.ceil(weeks / 4)} month${Math.ceil(weeks / 4) > 1 ? 's' : ''} = R${totalCost}`;
+                    }
+                    break;
+            }
+
+            // Update display
+            calculatedPrice.textContent = `R${totalCost}`;
+            calculationDetail.textContent = detailText;
+            calculatorResult.classList.add('active');
+
+            // Scroll to results
+            calculatorResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Book calculated plan
+        bookCalculatedBtn.addEventListener('click', () => {
+            openBookingModal();
+
+            // Pre-fill booking form with calculated values
+            const type = sessionType.value;
+            const subject = document.getElementById('subject').value;
+
+            document.getElementById('bookingPlan').value = type;
+            document.getElementById('bookingSubject').value = subject;
+        });
+
+        // FAQ Accordion
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // Contact Form Submission
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('message').value;
+
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                showMessage('Please fill in all required fields.', 'error');
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                showMessage('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            // Simulate form submission
+            showMessage('Thank you for your message! I will get back to you within 24 hours.', 'success');
+
+            // Reset form
+            contactForm.reset();
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageStatus.classList.remove('success');
+                messageStatus.textContent = '';
+            }, 5000);
+        });
+
+        // Email validation
+        function isValidEmail(email) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        // Show message function
+        function showMessage(text, type) {
+            messageStatus.textContent = text;
+            messageStatus.className = 'message-status ' + type;
+        }
+
+        // Booking Modal
+        function openBookingModal() {
+            bookingModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeBookingModal() {
+            bookingModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        bookNowBtn.addEventListener('click', openBookingModal);
+        modalClose.addEventListener('click', closeBookingModal);
+
+        // Close modal when clicking outside
+        bookingModal.addEventListener('click', (e) => {
+            if (e.target === bookingModal) {
+                closeBookingModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && bookingModal.classList.contains('active')) {
+                closeBookingModal();
+            }
+        });
+
+        // Booking Form Submission
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('bookingName').value;
+            const email = document.getElementById('bookingEmail').value;
+            const phone = document.getElementById('bookingPhone').value;
+            const plan = document.getElementById('bookingPlan').value;
+            const subject = document.getElementById('bookingSubject').value;
+            const message = document.getElementById('bookingMessage').value;
+
+            // Simple validation
+            if (!name || !email || !phone || !plan || !subject) {
+                showBookingMessage('Please fill in all required fields.', 'error');
+                return;
+            }
+
+            if (!isValidEmail(email)) {
+                showBookingMessage('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            // Simulate form submission
+            showBookingMessage('Booking request submitted successfully! I will contact you within 24 hours to confirm your session.', 'success');
+
+            // Reset form
+            bookingForm.reset();
+
+            // Close modal after 3 seconds
+            setTimeout(() => {
+                closeBookingModal();
+                bookingStatus.classList.remove('success');
+                bookingStatus.textContent = '';
+            }, 3000);
+        });
+
+        // Show booking message function
+        function showBookingMessage(text, type) {
+            bookingStatus.textContent = text;
+            bookingStatus.className = 'message-status ' + type;
+        }
+
+        // Testimonial Slider
+        function updateSlider() {
+            const slideWidth = 600 / totalSlides;
+            testimonialTrack.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+
+            // Update dots
+            sliderDots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        // Dot navigation
+        sliderDots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                currentSlide = parseInt(this.getAttribute('data-slide'));
+                updateSlider();
+            });
+        });
+
+        // Auto-slide testimonials
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        }, 5000);
+
+        // Select plan buttons
+        selectPlanBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const plan = this.getAttribute('data-plan');
+                openBookingModal();
+                document.getElementById('bookingPlan').value = plan;
+            });
+        });
+
+        // Initialize calculator
+        updateTransportVisibility();
+        calculateCost();
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                header.style.padding = '10px 0';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+                header.style.padding = '15px 0';
+            }
+        });
+    </script>
 </body>
 </html>
