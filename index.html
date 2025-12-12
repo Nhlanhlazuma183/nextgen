@@ -74,15 +74,19 @@
                      <img src='./images/a1.jpg' style='width:250px'>
                 </div>
             </div>
-            <h2>My Mission</h2>
+
             <div class="about-content">
                 <div class="about-text">
+                    <br/>
+                    <br/>
+                    <h2>My Mission</h2>
                     <p>To end the stigma that Mathematics and Physics are inherently difficult by providing a clear, patient, and supportive learning environment. I am committed to unlocking each student's potential through tailored explanations, practical context, and confidence-building success.
                     </p>
                      <h2>My Vision</h2>
+                     <p>To create a generation of students who approach quantitative subjects not with anxiety, but with curiosity and confidence, empowered with the logical skills and problem-solving abilities that will serve them in any academic or career path they choose. </P>
             <div class="about-content">
                 <div class="about-text">
-                  <p>To create a generation of students who approach quantitative subjects not with anxiety, but with curiosity and confidence, empowered with the logical skills and problem-solving abilities that will serve them in any academic or career path they choose. </P>
+
             </div>
             </div>
 
@@ -148,7 +152,7 @@
                             <li>Resource materials provided</li>
                             <li>Progress tracking</li>
                         </ul>
-                        <button class="btn" data-plan="one-on-one-online">Select Plan</button>
+                      
                     </div>
 
                     <div class="card pricing-card featured">
@@ -165,7 +169,7 @@
                             <li>Convenient home learning environment</li>
                             <li>Up to 2 live lessons</li>
                         </ul>
-                        <button class="btn" data-plan="group-online">Select Plan</button>
+
                     </div>
                 </div>
             </div>
@@ -185,7 +189,7 @@
                             <li>Direct parental involvement possible</li>
                             <li>Transport fee applies (R50-R100)</li>
                         </ul>
-                        <button class="btn" data-plan="house-calls">Select Plan</button>
+
                     </div>
 
                     <div class="card pricing-card featured">
@@ -202,7 +206,7 @@
                             <li>Comprehensive curriculum coverage</li>
                             <li>Exam preparation included</li>
                         </ul>
-                        <button class="btn" data-plan="monthly-group">Select Plan</button>
+
                     </div>
                 </div>
             </div>
@@ -459,11 +463,11 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fab fa-facebook-f"></i>
                         </div>
                         <div>
-                            <h3>E-mail</h3>
-                            <p><a href="tel:0724846080" class="highlight">nhlanhlazuma183@gmail.com</a></p>
+                            <h3>Facebook</h3>
+                            <p><a href="https://www.facebook.com/profile.php?id=61584754014180" class="highlight">Stem Unlimited</a></p>
                             <p>Available Mon-Sat, 7am-7pm</p>
                         </div>
                     </div>
@@ -492,33 +496,7 @@
                         <i class="fas fa-map-marked-alt"></i> Daveyton - Benoni Area
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contactSubject">Subject of Interest *</label>
-                            <select id="contactSubject" required>
-                                <option value="">Select a subject</option>
-                                <option value="mathematics">Mathematics</option>
-                                <option value="sciences">Physical Sciences</option>
-                                <option value="both">Both Subjects</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                        <div class="message-status" id="messageStatus"></div>
-                    </form>
-                </div>
+
             </div>
         </div>
     </section>
@@ -531,10 +509,11 @@
                     <div class="footer-logo">NHLANHLA <span>ZUMA</span> TUTORING</div>
                     <p>Professional Mathematics & Physical Sciences tutoring for Grade 8-12 students. Helping students achieve academic excellence through personalized learning.</p>
                     <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61584754014180" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+
                     </div>
                 </div>
                 <div class="footer-links">
@@ -858,6 +837,7 @@
                 return;
             }
 
+
             // Simulate form submission
             showMessage('Thank you for your message! I will get back to you within 24 hours.', 'success');
 
@@ -869,6 +849,26 @@
                 messageStatus.classList.remove('success');
                 messageStatus.textContent = '';
             }, 5000);
+
+            async function sendEmailFromFrontend(recipient, subject, body) {
+                  const response = await fetch('/api/send-email', { // This endpoint is on your server
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ recipient, subject, body }),
+                  });
+
+                  if (response.ok) {
+                    console.log('Email request successfully sent to server.');
+                    alert('Email Sent!');
+                  } else {
+                    console.error('Failed to send email request.');
+                  }
+            }
+
+            sendEmailFromFrontend('nhlanhlazuma183@gmail.com', subject, message);
+
         });
 
         // Email validation
@@ -910,6 +910,12 @@
                 closeBookingModal();
             }
         });
+
+
+
+
+
+
 
         // Booking Form Submission
         bookingForm.addEventListener('submit', function(e) {
